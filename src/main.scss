@@ -4,6 +4,7 @@ body
 {
     font-family: 'Inter';
     background-color: #ffffff;
+    user-select: none;
 }
 
 .page
@@ -41,7 +42,7 @@ body
 
     &-box2 
     {
-        flex-grow: 3;
+        flex-grow: 1;
         background-color: rgb(197, 197, 197);
         display: flex;
         width: 600px;
@@ -138,15 +139,44 @@ body
             align-items: center;
             justify-content: center;
 
-            &-right
+            .button 
             {
-                // margin: 15px;
+                color: white;
+                padding: 8px 0px;
+                background-color:#e2c000;
+                text-align: center;
+                margin: 15px 10px;
+                width: 100px;
+                border-radius: 5px;
+                transition: all ease-in .3s;
+
+                &:hover
+                {
+                    box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.61);
+                    transition: all ease-out .3s;
+                }
             }
         }
 
         &-surprise 
         {
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all ease-in 0.3s;
+
+            &:hover
+            {
+                background-color: black;
+                color: white;
+                transition: all ease-out 0.3s;
+            }
         }
     }
+}
+
+.hover:hover
+{
+    cursor: pointer;
 }
 

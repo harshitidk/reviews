@@ -2,6 +2,10 @@
 body {
   font-family: 'Inter';
   background-color: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .page {
@@ -55,9 +59,9 @@ body {
 }
 
 .page-box2 {
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   background-color: #c5c5c5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,5 +170,43 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.page-box2-arrow .button {
+  color: white;
+  padding: 8px 0px;
+  background-color: #e2c000;
+  text-align: center;
+  margin: 15px 10px;
+  width: 100px;
+  border-radius: 5px;
+  -webkit-transition: all ease-in .3s;
+  transition: all ease-in .3s;
+}
+
+.page-box2-arrow .button:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.61);
+          box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.61);
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+}
+
+.page-box2-surprise {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.page-box2-surprise:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+.hover:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
