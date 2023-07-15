@@ -192,18 +192,10 @@ body {
 }
 
 .page-box2-surprise {
-  border: 1px solid black;
   padding: 5px 10px;
-  border-radius: 5px;
-  -webkit-transition: all ease-in 0.3s;
-  transition: all ease-in 0.3s;
-}
-
-.page-box2-surprise:hover {
-  background-color: black;
-  color: white;
-  -webkit-transition: all ease-out 0.3s;
-  transition: all ease-out 0.3s;
+  color: #e2c000;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .hover:hover {
