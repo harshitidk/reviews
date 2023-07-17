@@ -1,9 +1,9 @@
 const profile = [
-    "../pr2.jpg",
-    "../pr3.jpg",
-    "../pr4.jpg",
-    "../pr5.jpg",
-    "../pr1.jpg"]
+    "./pr2.jpg",
+    "./pr3.jpg",
+    "./pr4.jfif",
+    "./pr5.jfif",
+    "./pr1.jpg"]
 const name = [
     "Cute Senpai",
     "Simp Shit",
@@ -32,6 +32,35 @@ const bioc = document.querySelector('.page-box2-bio')
 let count = 0
 
 next.addEventListener('click', function(){
-    let profile_url = profile[count]
-    profilec.style.backgroundImage = "url(`${profile}`)"
+    count++;
+    count = change(count);
+    profilec.src = profile[count];
+    namec.textContent = name[count];
+    titlec.textContent = title[count];
+    bioc.textContent = bio[count];
 })
+
+pre.addEventListener('click', function(){
+    count--;
+    count = change(count);
+    profilec.src = profile[count];
+    namec.textContent = name[count];
+    titlec.textContent = title[count];
+    bioc.textContent = bio[count];
+})
+
+const change = (count) =>
+{
+    if (count==5)
+    {
+        return (0)
+    }
+    else if (count==-1)
+    {
+        return (4)
+    }
+    else
+    {
+        return(count)
+    }
+}
